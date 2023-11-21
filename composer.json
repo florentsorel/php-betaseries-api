@@ -1,0 +1,36 @@
+{
+    "name": "rtransat/betaseries-api",
+    "version": "1.0.0",
+    "description": "Betaseries API client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florent Sorel",
+            "email": "florent.sorel@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rtransat\\Betaseries\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2",
+        "ext-mbstring": "*",
+        "php-http/discovery": "^1.19",
+        "psr/http-client-implementation": "*",
+        "psr/http-factory-implementation": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": false
+        }
+    },
+    "require-dev": {
+        "symfony/http-client": "^6.3",
+        "nyholm/psr7": "^1.8",
+        "friendsofphp/php-cs-fixer": "^3.38"
+    }
+}
